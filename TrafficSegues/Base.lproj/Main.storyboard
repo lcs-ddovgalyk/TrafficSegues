@@ -14,32 +14,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiX-vh-Y9p">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="dEg-7w-3Ob" kind="show" id="2T1-Y5-ePJ"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-9u-4ef">
-                                <rect key="frame" x="159" y="383" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="PiX-vh-Y9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Gs-3m-ckg"/>
-                            <constraint firstItem="PiX-vh-Y9p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wCz-jG-6RF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="XZX-Eh-AkI" userLabel="Red"/>
-                    <connections>
-                        <outlet property="textField" destination="rcg-9u-4ef" id="1xK-QS-2To"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,20 +30,7 @@
                     <view key="view" contentMode="scaleToFill" id="7G1-QV-Bnr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r33-KK-TL4">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Wxk-9t-4lA" kind="show" id="ZUx-Fm-k7x"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="r33-KK-TL4" firstAttribute="centerX" secondItem="7G1-QV-Bnr" secondAttribute="centerX" id="Hcs-SY-N32"/>
-                            <constraint firstItem="r33-KK-TL4" firstAttribute="centerY" secondItem="7G1-QV-Bnr" secondAttribute="centerY" id="sPW-Vs-2KN"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ULK-Vc-MZM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Yellow" id="Eed-RO-32d" userLabel="Yellow"/>
