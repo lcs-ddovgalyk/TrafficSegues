@@ -14,10 +14,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4Y-cu-hpq">
+                                <rect key="frame" x="64" y="433" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push to yellow"/>
+                                <connections>
+                                    <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTq-6S-Iub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2I-uf-Fm3">
+                                <rect key="frame" x="269" y="433" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pust to Green"/>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfx-Zg-3tW"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gen-hP-alE">
+                                <rect key="frame" x="183" y="533" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="XZX-Eh-AkI" userLabel="Red"/>
+                    <connections>
+                        <outlet property="segueSwitch" destination="gen-hP-alE" id="LFa-gT-Yv8"/>
+                        <segue destination="dEg-7w-3Ob" kind="show" identifier="Yellow" id="osB-8O-aMc"/>
+                        <segue destination="Wxk-9t-4lA" kind="show" identifier="Green" id="qfh-b4-5x5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRL-Z9-Hcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.4057971014495" y="129.91071428571428"/>
+            <point key="canvasLocation" x="2154" y="-193"/>
         </scene>
         <!--Green-->
         <scene sceneID="gx6-YH-HOe">
@@ -49,18 +76,11 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DtR-d3-iLK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Green" id="Tdb-ew-N9V" userLabel="Green">
-                        <barButtonItem key="rightBarButtonItem" title="Pop" id="Gy2-VJ-UtP">
-                            <connections>
-                                <segue destination="zh9-kP-eh1" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="eWU-of-bKR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Green" id="Tdb-ew-N9V" userLabel="Green"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6C-QZ-BH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="zh9-kP-eh1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="130"/>
+            <point key="canvasLocation" x="2154" y="478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2PK-VU-bbG">
