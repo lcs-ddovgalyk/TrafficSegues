@@ -22,6 +22,12 @@
                                     <segue destination="dEg-7w-3Ob" kind="show" id="2T1-Y5-ePJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-9u-4ef">
+                                <rect key="frame" x="159" y="383" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -31,6 +37,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="XZX-Eh-AkI" userLabel="Red"/>
+                    <connections>
+                        <outlet property="textField" destination="rcg-9u-4ef" id="1xK-QS-2To"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,23 +81,16 @@
                     <view key="view" contentMode="scaleToFill" id="EE0-fw-D48">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnG-GF-lBE">
-                                <rect key="frame" x="180" y="433" width="54" height="30"/>
-                                <state key="normal" title="Dismiss"/>
-                                <connections>
-                                    <segue destination="zh9-kP-eh1" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="TgV-s8-Hvk"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="JnG-GF-lBE" firstAttribute="centerX" secondItem="EE0-fw-D48" secondAttribute="centerX" id="lX9-az-4uX"/>
-                            <constraint firstItem="JnG-GF-lBE" firstAttribute="centerY" secondItem="EE0-fw-D48" secondAttribute="centerY" id="xYh-Oc-aQs"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DtR-d3-iLK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Green" id="Tdb-ew-N9V" userLabel="Green"/>
+                    <navigationItem key="navigationItem" title="Green" id="Tdb-ew-N9V" userLabel="Green">
+                        <barButtonItem key="rightBarButtonItem" title="Pop" id="Gy2-VJ-UtP">
+                            <connections>
+                                <segue destination="zh9-kP-eh1" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="eWU-of-bKR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6C-QZ-BH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zh9-kP-eh1" userLabel="Exit" sceneMemberID="exit"/>
